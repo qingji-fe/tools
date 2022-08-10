@@ -9,9 +9,20 @@ class SingleEntryPlugin {
       "SingleEntryPlugin",
       (compilation, callback) => {
         console.log("make执行");
-        compilation.addEntry(context, entry, name);
+        const { context, entry, name } = this;
+        // const dep = SingleEntryPlugin.createDependency(entry, name);
+
+        compilation.addEntry(context, entry, name, (info) => {
+          callback(info);
+        });
       }
     );
   }
+  static createDependency(entry, name) {
+    const dep = new SingleEntryDependency(entry);
+    dep.loc = { name };
+    return dep;
+  }
 }
+
 module.exports = SingleEntryPlugin;

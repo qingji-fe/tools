@@ -1,0 +1,13 @@
+# 依赖
+node_modules
+
+# 构建产物
+dist
+output
+
+# 缓存
+.DS_Store
+.history
+
+# 日志
+*.log
