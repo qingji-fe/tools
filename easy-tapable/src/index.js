@@ -30,7 +30,7 @@ hook2.tap("a", (parms) => {
 hook2.tap("b", (parms) => {
   console.log("log2222", parms);
 });
-// hook2.call("a");
+hook2.call("a");
 
 // 3.  同步钩子hook传递参数
 const hook3 = new SyncBailHook(); // 创建钩子对象
@@ -179,6 +179,6 @@ hook11.tapAsync("b", (parms, callback) => {
     console.log("bbbb", parms);
   }, 2000);
 });
-hook11.callAsync("参数", (res) => {
-  console.log("all完成", res);
-});
+// hook11.callAsync("参数", (res) => {
+//   console.log("all完成", res);
+// });
