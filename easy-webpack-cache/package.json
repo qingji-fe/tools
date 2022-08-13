@@ -1,0 +1,26 @@
+{
+  "name": "easy-webpack-cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack server --config build/webpack.dev.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/parser": "^7.18.11",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/traverse": "^7.18.11",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.3.1",
+    "tapable": "^2.2.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}

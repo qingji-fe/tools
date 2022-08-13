@@ -1,0 +1,67 @@
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist
+
+yarn-error.log
+yarn.lock
+yarn-error.log
+# package-lock.json
+npm-debug.log*
+.umi
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+
+
+# production
+dist
+lib
+esm
+/docs-dist
+# misc
+.idea
+.DS_Store
+.idea
+.vscode
+
+# umi
+.umi
+.umi-production
+.umi-test
+.env.local
+
+# lerna
+
+/packages/*/es
+/packages/*/node_modules
+/packages/*/.local
+/packages/*/dist
+/packages/**/node_modules
+/.local
+
+# custom
+old-doc
+test.json
+/docs/guide/.test
+
+.history
