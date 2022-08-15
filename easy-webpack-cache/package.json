@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack server --config build/webpack.dev.js"
+    "dev": "webpack server --config build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.build.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,9 @@
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "cross-env": "^7.0.3",
     "html-webpack-plugin": "^5.3.1",
+    "lodash": "^4.17.21",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "tapable": "^2.2.1",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
