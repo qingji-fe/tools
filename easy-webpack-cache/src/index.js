@@ -1,20 +1,16 @@
-function getComponent() {
-  return import("lodash").then((_) => {
-    var element = document.createElement("div");
-    element.innerHTML = _.join(["Hello", "webpack"], " ");
-    return element;
-  });
-}
+// import("./one1").then((module) => {
+//   const greeter = module.default;
+//   document.querySelector("#root").appendChild(greeter());
+// });
+// import("./two").then((module) => {
+//   const greeter = module.default;
+//   document.querySelector("#root").appendChild(greeter());
+// });
 
-getComponent().then((component) => {
-  document.body.appendChild(component);
-});
+import css from "./index.css";
+console.log("给他人非的", css);
 
-import("./one1").then((module) => {
-  const greeter = module.default;
-  document.querySelector("#root").appendChild(greeter());
-});
-import("./two").then((module) => {
-  const greeter = module.default;
-  document.querySelector("#root").appendChild(greeter());
-});
+let div = document.createElement("div");
+div.className = "div";
+div.innerText = "hello div";
+document.getElementsByTagName("body")[0].appendChild(div);

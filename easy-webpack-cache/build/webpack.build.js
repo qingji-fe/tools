@@ -13,9 +13,9 @@ module.exports = merge(common, {
         },
       },
     },
-    runtimeChunk: {
-      name: "runtime",
-    },
+    // runtimeChunk: {
+    //   name: "runtime",
+    // },
   },
 });
 
