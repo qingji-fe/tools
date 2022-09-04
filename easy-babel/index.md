@@ -99,6 +99,8 @@ js 拆分规则是
 
 ## 简易实现
 
+可以参考[easy-babel](https://github.com/qingji-fe/tools/blob/main/easy-babel/index.js)
+
 ```js
 var sourceCode = "const a = 1";
 var tokenizer = new Tokenizer(sourceCode);
@@ -194,7 +196,7 @@ ReactDOM.render(<_button>xxxx</_button>);
   ```
 
 - 介绍
-  参考
+  可以参考[指令语法](https://github.com/qingji-fe/resonance/tree/main/babel-plugins-directives)
 
 ## 小结
 
